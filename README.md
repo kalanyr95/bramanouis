@@ -1,2 +1,2 @@
 # bramanouis
-Projet de programmation web avancé
+Projet de programmation web avancé (Vue.js, Node.js)
