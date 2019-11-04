@@ -78,7 +78,7 @@ export default {
 
 }
 </script>
-<!-- connexion : <template>
+<template>
   <v-row justify="space-around" align="center" >
     <v-form justify="space-around" align="center"
       ref="form"
@@ -389,4 +389,4 @@ export default {
     }
   }
 }
-</script>
+</script> -->
