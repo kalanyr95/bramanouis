@@ -78,6 +78,8 @@ export default {
 
 }
 </script>
+
+<!--
 <template>
   <v-row justify="space-around" align="center" >
     <v-form justify="space-around" align="center"
