@@ -1,0 +1,22 @@
+<h1>Profile</h1>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Champ</th>
+                <th>Contenu</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>locals.user from req.user</td>
+            <td><%= JSON.stringify(user) %></td>
+          </tr>
+          <tr>
+            <td>user from database</td>
+            <td><%= JSON.stringify(dbUser) %></td>
+          </tr>
+        </tbody>
+    </table>
+</div>
