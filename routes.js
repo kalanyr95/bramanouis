@@ -57,7 +57,7 @@ router.get('/deleteBook/:id', function(req, res) {
 })
 
 // update a book
-router.put('/updateBook/:title', function(req, res) {
+router.get('/updateBook/:title', function(req, res) {
   db.get('books')
     .find({title: req.params.title})
     .assign({title: req.query.title})
