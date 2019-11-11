@@ -8,8 +8,6 @@ authService.configurePassport(passport)
 
 
 // connect to database
-// path.join will take the parameters and create a path using the
-// right type of slashes (\ vs /) based on the operatin system
 var db = low(path.join('data', 'db.json'));
 
 //==========================
@@ -45,6 +43,25 @@ router.post('/createBook', function(req, res) {
     .write()
 
   // redirect
+  res.redirect('/books')
+})
+
+// delete a book
+router.get('/deleteBook/:id', function(req, res) {
+  db.get('books')
+    .remove({id: req.params.id})
+    .write()
+
+  res.redirect('/books')
+})
+
+// update a book
+router.get('/updateBook/:title/title1', function(req, res) {
+  db.get('books')
+    .find({title: req.params.title})
+    .assign({title: req.params.title1})
+    .write()
+
   res.redirect('/books')
 })
 

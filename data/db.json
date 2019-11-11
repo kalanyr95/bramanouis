@@ -9,28 +9,23 @@
       "username": "adm",
       "id": "cd0299ba-10a3-48a6-8cd8-d7734187af32",
       "password": "$2a$10$1I8kp69swdGjj/LsFWmpbOQcGzo/hTtDKcmrCe89NRjlG3O9i3DQu"
+    },
+    {
+      "username": "test",
+      "id": "815de999-7884-47ee-b456-cc4558783cd6",
+      "password": "$2a$10$mcJER693b0WyaylQF2uELuZQ/0u5CYH1lnmkz2c/ouDkK6amEam/O"
     }
   ],
   "books": [
     {
-      "title": "Book One",
-      "id": "4a588d9d-dd53-4e29-a548-4932cab38d4c",
+      "title": "test",
+      "id": "1e390bb6-19d9-4a4b-81b9-687a73fcc2e9",
       "author_id": "1"
     },
     {
-      "title": "Book Two",
-      "id": "2a86570e-5b7e-491d-9249-264a0815f64f",
-      "author_id": "2"
-    },
-    {
-      "title": "ezd",
-      "id": "32a3c2c4-0bf0-4cf7-b6cc-166e837a8ffa",
+      "title": "test test",
+      "id": "047c10af-2133-4939-8a86-e3cc1e6c0765",
       "author_id": "1"
-    },
-    {
-      "title": "dze",
-      "id": "3fba0eb7-8bb8-46dd-a07b-5e98b67eaf48",
-      "author_id": "2"
     }
   ],
   "authors": [

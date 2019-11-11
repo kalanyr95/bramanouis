@@ -1,4 +1,4 @@
-<h1>Book</h1>
+<h1>Livre</h1>
 
 <div>
     <table class="table table-striped">
@@ -16,7 +16,15 @@
           <tr>
             <td>Auteur du livre</td>
             <td><%= author.name %></td>
+            <a href="/deleteBook/<%= book.id %>"><input type="submit" value="Delete"></a>
           </tr>
         </tbody>
     </table>
+    <form action="/updateBook/:book.title/title1" method="get">
+      <div class="form-group">
+        <label for="title">Rename : </label>
+        <input type="text" class="form-control" name="title1" id="title1">
+      </div>
+      <input type="submit" class="btn btn-primary">
+    </form>
 </div>
