@@ -1,0 +1,34 @@
+<h1>Livre</h1>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Champ</th>
+                <th>Contenu</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nom du livre</td>
+            <td><%= book.title %></td>
+          </tr>
+          <tr>
+            <td>Auteur du livre</td>
+            <td><%= author.name %></td>
+            <a href="/deleteBook/<%= book.id %>"><input type="submit" value="Delete"></a>
+          </tr>
+          <tr>
+            <td>Détail</td>
+            <td><%= book.detail %></td>
+          </tr>
+        </tbody>
+    </table>
+    <form action="/updateBook/<%= book.title %>" method="get">
+      <div class="form-group">
+        <label for="title">Rename : </label>
+        <input type="text" class="form-control" name="title" id="title">
+      </div>
+      <input type="submit" class="btn btn-primary">
+    </form>
+</div>
