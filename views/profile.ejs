@@ -10,12 +10,16 @@
         </thead>
         <tbody>
           <tr>
-            <td>locals.user from req.user</td>
-            <td><%= JSON.stringify(user) %></td>
+            <td>Nom Utilisateur</td>
+            <td><%= JSON.stringify(dbUser.username) %></td>
           </tr>
           <tr>
-            <td>user from database</td>
-            <td><%= JSON.stringify(dbUser) %></td>
+            <td>ID</td>
+            <td><%= JSON.stringify(dbUser.id) %></td>
+          </tr>
+          <tr>
+            <td>Mot de passe</td>
+            <td><%= JSON.stringify(dbUser.password) %></td>
           </tr>
         </tbody>
     </table>

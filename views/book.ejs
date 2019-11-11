@@ -18,12 +18,16 @@
             <td><%= author.name %></td>
             <a href="/deleteBook/<%= book.id %>"><input type="submit" value="Delete"></a>
           </tr>
+          <tr>
+            <td>Détail</td>
+            <td><%= book.detail %></td>
+          </tr>
         </tbody>
     </table>
-    <form action="/updateBook/:book.title/title1" method="get">
+    <form action="/updateBook/<%= book.title %>" method="get">
       <div class="form-group">
         <label for="title">Rename : </label>
-        <input type="text" class="form-control" name="title1" id="title1">
+        <input type="text" class="form-control" name="title" id="title">
       </div>
       <input type="submit" class="btn btn-primary">
     </form>

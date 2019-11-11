@@ -36,10 +36,11 @@ router.post('/createBook', function(req, res) {
   // get data from form
   var title = req.body.title;
   var author_id = req.body.author_id;
+  var detail = req.body.detail;
 
   // insert new book into database
   db.get('books')
-    .push({title: title, id: uuid(), author_id: author_id})
+    .push({title: title, id: uuid(), author_id: author_id, detail: detail})
     .write()
 
   // redirect
@@ -56,12 +57,12 @@ router.get('/deleteBook/:id', function(req, res) {
 })
 
 // update a book
-router.get('/updateBook/:title/title1', function(req, res) {
+router.put('/updateBook/:title', function(req, res) {
   db.get('books')
     .find({title: req.params.title})
-    .assign({title: req.params.title1})
+    .assign({title: req.query.title})
     .write()
-
+  
   res.redirect('/books')
 })
 

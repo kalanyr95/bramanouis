@@ -18,7 +18,7 @@
   ],
   "books": [
     {
-      "title": "test",
+      "title": "testt",
       "id": "1e390bb6-19d9-4a4b-81b9-687a73fcc2e9",
       "author_id": "1"
     },
@@ -26,6 +26,22 @@
       "title": "test test",
       "id": "047c10af-2133-4939-8a86-e3cc1e6c0765",
       "author_id": "1"
+    },
+    {
+      "title": "csdcs",
+      "id": "6a292df4-5daf-4959-b42a-9970301fb1aa",
+      "author_id": "1"
+    },
+    {
+      "title": "omega",
+      "id": "3cc08fa2-f49a-4b4e-80ac-4b7277e0002a",
+      "author_id": "1"
+    },
+    {
+      "title": "test",
+      "id": "b907b1db-37ea-46d9-b956-8cee68322253",
+      "author_id": "1",
+      "detail": "yrgregrege"
     }
   ],
   "authors": [
